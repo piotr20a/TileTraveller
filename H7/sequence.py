@@ -2,7 +2,7 @@ number_1 = 1
 number_2 = 2
 number_3 = 3
 sum_number = 0
-
+num = 0
 n = int(input("Enter the length of the sequence: "))
 print(number_1)
 print(number_2)
