@@ -230,3 +230,95 @@
 #             new_line += new_letter
         
 #         print(new_line)
+
+# a_str = input("Input a string: ")
+# new_str = a_str[0] + " " + a_str[-1]
+# print(new_str)
+
+# a_str = input("Input a string: ")
+# # your code here
+# new_str = a_str[-2:] + a_str[0:-2]
+# print(new_str)
+
+# a_str = input("Input a string: ")
+# i= 0
+# j= 0
+# for chr in a_str:
+#     if chr.isupper():
+#         i += 1
+#     elif chr.islower():
+#         j += 1
+
+# print(j)
+# print(i)
+
+# a_str = input("Input a float: ")
+# a_float = float(a_str)
+
+# print("{:12.2f}".format(a_float))
+
+# a_str = input("Input a string: ")
+# word_count = 0
+# letter_count = 0
+# for char in a_str + " ":
+#     if char.isupper() or char.islower() or char.isdigit():
+#         letter_count += 1
+#     if char == " ":
+#         word_count += 1
+    
+
+# print(f"No. of letters: {letter_count}, no. of words: {word_count}")
+
+
+# name = input("Input a name: ")
+# char_str = ""
+# lastname_str = ""
+# for char in name:
+#     if char == ",":
+#         break
+
+#     char_str += char
+
+# lastname_str = name.split()
+# last_name = lastname_str[1]
+
+
+    
+# print(last_name[0].upper() + ". " + char_str.title())
+
+# my_int = int(input('Give me an int >= 0: '))
+# reminder_int = my_int
+# # Fill in the missing code
+# bin_str= ""
+
+# if my_int == 0:
+#     bin_str = "0"
+
+# while my_int > 0:
+#     remainder = my_int % 2
+#     my_int = my_int // 2
+#     if remainder == 1:
+#         bin_str += "1"
+#     elif remainder == 0:
+#         bin_str += "0"
+
+# bin_str = bin_str[::-1]
+# print("The binary of {} is {}".format(reminder_int,bin_str))
+
+# Keep these 2 lines
+text_to_translate = input("Text to translate: ")
+VOWELS = "aeiouyAEIOUY"
+translation = ""
+text_list = text_to_translate.split()
+
+# ...add your code here
+for i in range(len(text_list)):
+    if VOWELS in text_list[i]:
+        if VOWELS in text_list[i][0]:
+          translation = text_list[i] + "yay"   
+    break
+# Keep this line
+print("Translation:", translation)
+
+
+    
