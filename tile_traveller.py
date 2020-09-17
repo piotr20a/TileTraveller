@@ -38,7 +38,11 @@ def switch_tile(current_tile, direction):
     else:
         print("Not a valid direction!")
         return current_tile
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6cef77b42ce5a4440342865b849cb342643d58c6
 current_tile = 1
 while current_tile != 7:
     print(find_available_paths(current_tile))
