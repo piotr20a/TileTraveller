@@ -5,15 +5,19 @@
     At each iteration, the player enters the first letter of the direction he/she wishes to travel,
     after which the player should be located in another tile and the options for the new tile are then printed out.
 '''
+
+#git repository for the project - https://github.com/piotr20a/TileTraveller.git
+
+
 def find_available_paths(current_tile):
     if current_tile == 1 or current_tile == 4 or current_tile == 7:
         return "You can travel: (N)orth."
     if current_tile == 2:
-        return "You can travel: (N)orth or (E)ast or (South)."
+        return "You can travel: (N)orth or (E)ast or (S)outh."
     if current_tile == 3:
         return "You can travel: (E)ast or (S)outh."
     if current_tile == 5 or current_tile == 9:
-        return "You can travel: (W)est or (S)outh."
+        return "You can travel: (S)outh or (W)est."
     if current_tile == 6:
         return "You can travel: (E)ast or (W)est."
     if current_tile == 8:
@@ -33,12 +37,11 @@ def switch_tile(current_tile, direction):
         return current_tile
     else:
         print("Not a valid direction!")
+        return current_tile
 
-# prufa
 current_tile = 1
 while current_tile != 7:
-    print("You are in tile", current_tile)
-    print("You can travel:", find_available_paths(current_tile))
+    print(find_available_paths(current_tile))
 
     direction = input("Direction: ")
     current_tile = switch_tile(current_tile, direction)
